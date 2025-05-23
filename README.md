@@ -6,6 +6,7 @@ M3SD: Multi-modal, Multi-scenario and Multi-language Speaker Diarization Dataset
 - **Step 1: Get audio and video**
 
 You can download our dataset (https://huggingface.co/spaces/OldDragon/m3sd) or crawl audio and video from YouTube according to the code (local/search_video.py)
+
 You first need to get your own YouTube API key (https://console.developers.google.com/apis/api/youtube.googleapis.com) and fill it in the code.
 ```
 python local/search_video.py
