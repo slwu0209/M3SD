@@ -9,9 +9,11 @@ You can download our dataset (https://huggingface.co/spaces/OldDragon/m3sd) or c
 
 You first need to get your own YouTube API key (https://console.developers.google.com/apis/api/youtube.googleapis.com) and fill it in the code.
 ```
-python local/search_video.py
+python local/search_video.py (Please change your file path in the script)
 ```
-- **Data prepare**
+- **Step 2: Scene detection and segmentation**
+
+In order to ensure the effect of subsequent face detection and tracking, it is necessary to perform scene detection and segmentation
 ```
-bash data_prepare.sh   # (Please change your file path in the script. Note that WPE is not necessary for training set)
+python local/segment.py   # (Please change your file path in the scriptt)
 ```
