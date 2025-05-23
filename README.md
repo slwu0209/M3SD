@@ -1,11 +1,16 @@
 # M3SD
 M3SD: Multi-modal, Multi-scenario and Multi-language Speaker Diarization Dataset
+# Direct use
 
-# Quick start
+Our dataset can be downloaded at https://huggingface.co/spaces/OldDragon/m3sd
+
+The dataset contains 770+ hours of conversations, covering multiple scenarios such as online and offline meetings, home communications, outdoor conversations, interviews, movie clips, news broadcasts, and multiple languages ​​including English and Chinese. The data comes from YouTube and is pseudo-labeled through a variety of speaker diarization systems. We will provide audio files, annotation files, and video metadata including uid. You can also download videos from YouTube based on video meta information for multimodal research. It is worth noting that since the speaker diarization labels of the data are not manually annotated, they are not guaranteed to be fully prepared. They can be used for model pre-training, etc.
+
+# Self-build
 
 - **Step 1: Get audio and video**
 
-You can download our dataset (https://huggingface.co/spaces/OldDragon/m3sd) or crawl audio and video from YouTube according to the code (local/search_video.py)
+Crawl audio and video from YouTube.
 
 You first need to get your own YouTube API key (https://console.developers.google.com/apis/api/youtube.googleapis.com) and fill it in the code.
 ```
