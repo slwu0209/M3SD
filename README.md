@@ -6,7 +6,7 @@ Our dataset can be downloaded at https://huggingface.co/spaces/OldDragon/m3sd
 
 The dataset contains 770+ hours of conversations, covering multiple scenarios such as online and offline meetings, home communications, outdoor conversations, interviews, movie clips, news broadcasts, and multiple languages ​​including English and Chinese. The data comes from YouTube and is pseudo-labeled through a variety of speaker diarization systems. 
 
-We will provide audio files, annotation files, and video metadata including uid. You can also download videos from YouTube based on video meta information for multimodal research. It is worth noting that since the speaker diarization labels of the data are not manually annotated, they are not guaranteed to be fully prepared. They can be used for model pre-training, etc.
+We will provide audio files, annotation files, and video metadata including uid. You can also download videos from YouTube based on video meta information for multimodal research. It is worth noting that since the speaker diarization labels of the data are not manually annotated, they are not guaranteed to be completely accurate. They can be used for model pre-training, etc.
 
 # Self-build
 
