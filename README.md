@@ -14,7 +14,7 @@ We will provide audio files, annotation files, and video metadata including uid.
 
 Crawl audio and video from YouTube.
 
-You first need to get your own YouTube API key (https://console.developers.google.com/apis/api/youtube.googleapis.com) and fill it in the code.
+You first need to get your own [YouTube API key](https://console.developers.google.com/apis/api/youtube.googleapis.com) and fill it in the code.
 ```
 python local/search_video.py  # (Please change your file path in the script)
 ```
@@ -34,7 +34,7 @@ python local/synv_result.py  # (Please change your file path in the script)
 ```
 - **Step 4: Face detection and tracking, lip ROI extraction**
 
-In order to better perform audio-visual speaker diarization, we need to get high-quality lip ROI, so we need to perform face detection and tracking as well as lip ROI extraction. We use Retinaface (https://github.com/bubbliiiing/retinaface-pytorch) for face detection, Deepsort (https://github.com/levan92/deep_sort_realtime/tree/master) for face trajectory tracking, and Mediapipe (https://github.com/google-ai-edge/mediapipe) for lip ROI extraction.
+In order to better perform audio-visual speaker diarization, we need to get high-quality lip ROI, so we need to perform face detection and tracking as well as lip ROI extraction. We use [Retinaface](https://github.com/bubbliiiing/retinaface-pytorch) for face detection, [Deepsort](https://github.com/levan92/deep_sort_realtime/tree/master) for face trajectory tracking, and [Mediapipe](https://github.com/google-ai-edge/mediapipe) for lip ROI extraction.
 
 First, download the model files required by Retinaface according to retinaface_pytorch/README, then install Deepsort (pip3 install deep-sort-realtime), Mediapipe (pip install mediapipe), and then build deep-person-reid (cd deep-person-reid, python setup.py develop).
 ```
@@ -44,5 +44,5 @@ python local/face_detection_tracking.py  # (Please change your file path in the 
 
 The last step is to use the pre-trained speaker diarization system to generate pseudo labels for the data. To ensure the quality of pseudo labels, we use the audio-only speaker diarization and audio-visual speaker diarization systems to generate results, and then perform voting fusion.
 
-The audio-only speaker diarization uses the 3D-Speaker system (https://github.com/modelscope/3D-Speaker), and the audio-visual speaker diarization uses the end-to-end audio-visual speaker diarization system (https://github.com/mispchallenge/misp2022_baseline/tree/main/track1_AVSD), and finally uses Dover-Lap (https://github.com/desh2608/dover-lap) for fusion.
+The audio-only speaker diarization uses the [3D-Speaker](https://github.com/modelscope/3D-Speaker) system, and the audio-visual speaker diarization uses the [End-to-end audio-visual speaker diarization](https://github.com/mispchallenge/misp2022_baseline/tree/main/track1_AVSD) system, and finally uses [Dover-Lap](https://github.com/desh2608/dover-lap) for fusion.
 Researchers can use these open source systems for pseudo label generation, or use more and better systems to get more accurate results.
