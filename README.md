@@ -46,3 +46,7 @@ The last step is to use the pre-trained speaker diarization system to generate p
 
 The audio-only speaker diarization uses the [3D-Speaker](https://github.com/modelscope/3D-Speaker) system, and the audio-visual speaker diarization uses the [End-to-end audio-visual speaker diarization](https://github.com/mispchallenge/misp2022_baseline/tree/main/track1_AVSD) system, and finally uses [Dover-Lap](https://github.com/desh2608/dover-lap) for fusion.
 Researchers can use these open source systems for pseudo label generation, or use more and better systems to get more accurate results.
+
+- **Optional Steps**
+
+After the first step, you can choose to perform audio and video quality detection to eliminate low-quality audio and video. You can choose [DNSMOS](https://github.com/microsoft/DNS-Challenge) for audio quality detection and [MD-VQA](https://github.com/kunyou99/MD-VQA_cvpr2023?tabreadme-ov-file) for video quality detection.
