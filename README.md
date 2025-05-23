@@ -33,3 +33,9 @@ First, download the model files required by Retinaface according to retinaface_p
 ```
 python local/face_detection_tracking.py  # (Please change your file path in the script)
 ```
+- **Step 5: Pseudo label generation**
+
+The last step is to use the pre-trained speaker diarization system to generate pseudo labels for the data. To ensure the quality of pseudo labels, we use the audio-only speaker diarization and audio-visual speaker diarization systems to generate results, and then perform voting fusion.
+
+The audio-only speaker diarization uses the 3D-Speaker system (https://github.com/modelscope/3D-Speaker), and the audio-visual speaker diarization uses the end-to-end audio-visual speaker diarization system (https://github.com/mispchallenge/misp2022_baseline/tree/main/track1_AVSD), and finally uses Dover-Lap (https://github.com/desh2608/dover-lap) for fusion.
+Researchers can use these open source systems for pseudo label generation, or use more and better systems to get more accurate results.
