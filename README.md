@@ -25,3 +25,11 @@ bash syncnet_python-master/download_model.sh
 python syncnet_python-master/run.py # (Please change your file path in the scriptt)
 python local/synv_result.py  # (Please change your file path in the scriptt)
 ```
+- **Step 4: Face detection and tracking, lip ROI extraction**
+
+In order to better perform audio-visual speaker diarization, we need to get high-quality lip ROI, so we need to perform face detection and tracking as well as lip ROI extraction. We use Retinaface (https://github.com/bubbliiiing/retinaface-pytorch) for face detection, Deepsort (https://github.com/levan92/deep_sort_realtime/tree/master) for face trajectory tracking, and Mediapipe (https://github.com/google-ai-edge/mediapipe) for lip ROI extraction.
+
+First, download the model files required by Retinaface according to retinaface_pytorch/README, then install Deepsort (pip3 install deep-sort-realtime), Mediapipe (pip install mediapipe), and then build deep-person-reid (cd deep-person-reid, python setup.py develop).
+```
+python local/face_detection_tracking.py  # (Please change your file path in the scriptt)
+```
