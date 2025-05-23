@@ -13,7 +13,15 @@ python local/search_video.py  # (Please change your file path in the script)
 ```
 - **Step 2: Scene detection and segmentation**
 
-In order to ensure the effect of subsequent face detection and tracking, it is necessary to perform scene detection and segmentation
+In order to ensure the effect of subsequent face detection and tracking, it is necessary to perform scene detection and segmentation.
 ```
 python local/segment.py   # (Please change your file path in the scriptt)
+```
+- **Step 3: Audio-visual synchronization detection**
+
+Ensure audio and video synchronization to improve overall data quality.
+```
+bash syncnet_python-master/download_model.sh
+python syncnet_python-master/run.py # (Please change your file path in the scriptt)
+python local/synv_result.py  # (Please change your file path in the scriptt)
 ```
