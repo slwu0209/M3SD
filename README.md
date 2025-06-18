@@ -50,3 +50,16 @@ Researchers can use these open source systems for pseudo label generation, or us
 - **Optional Steps**
 
 After the first step, you can choose to perform audio and video quality detection to eliminate low-quality audio and video. You can choose [DNSMOS](https://github.com/microsoft/DNS-Challenge) for audio quality detection and [MD-VQA](https://github.com/kunyou99/MD-VQA_cvpr2023?tabreadme-ov-file) for video quality detection.
+
+## Citation
+
+If you find this code useful in your research, please consider to cite the following papers:
+
+```bibtex
+@article{wu20215m3sd,
+  title={M3SD: Multi-modal, Multi-scenario and Multi-language Speaker Diarization Dataset},
+  author={Shilong Wu and Hang Chen and Jun Du},
+  journal={arXiv preprint arXiv:2506.14427},
+  year={2025}
+}
+```
