@@ -56,7 +56,7 @@ After the first step, you can choose to perform audio and video quality detectio
 If you find this code useful in your research, please consider to cite the following papers:
 
 ```bibtex
-@article{wu20215m3sd,
+@article{wu2025m3sd,
   title={M3SD: Multi-modal, Multi-scenario and Multi-language Speaker Diarization Dataset},
   author={Shilong Wu and Hang Chen and Jun Du},
   journal={arXiv preprint arXiv:2506.14427},
