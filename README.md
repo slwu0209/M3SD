@@ -58,7 +58,7 @@ If you find this code useful in your research, please consider to cite the follo
 ```bibtex
 @article{wu2025m3sd,
   title={M3SD: Multi-modal, Multi-scenario and Multi-language Speaker Diarization Dataset},
-  author={Wu, Shilong and Chen, Hang and Du, Jun},
+  author={Wu, Shilong},
   journal={arXiv preprint arXiv:2506.14427},
   year={2025}
 }
